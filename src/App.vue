@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto font-jost">
+  <div class="font-jost">
     <Navbar />
 
     <RouterView />

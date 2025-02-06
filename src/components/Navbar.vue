@@ -1,6 +1,6 @@
 <template>
     <header class="flex flex-nowrap sm:justify-start sm:flex-nowrap w-full bg-gray-200 text-sm py-5">
-        <nav class="max-w-[85rem] w-full mx-auto px-4 sm:px-10 flex flex-nowrap items-center justify-between">
+        <nav class="container mx-auto px-4 sm:px-10 flex flex-nowrap items-center justify-between">
             <RouterLink :to="{ name: 'dashboard' }"
                 class="flex justify-center sm:justify-baseline font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white">
                 SulySoft

@@ -1,6 +1,9 @@
 <template>
   <div class="container mx-auto p-5 py-10 sm:p-10">
 
+    <!-- Title Page -->
+    <h1 class="text-base font-semibold text-gray-700 mb-5">Dashboard</h1>
+
     <!-- Filters -->
     <div class="flex items-center gap-3 whitespace-nowrap mb-5">
       <!-- Search -->
