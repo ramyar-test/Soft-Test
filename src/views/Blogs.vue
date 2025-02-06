@@ -87,6 +87,13 @@
         <span v-else class="text-red-500 bg-red-100 rounded-full px-2 py-1">Unpublished</span>
       </template>
 
+      <template #actions="data">
+        <div class="flex gap-4">
+          <button type="button" class="btn btn-success !py-1" @click="viewUser(data.value)">View</button>
+          <button type="button" class="btn btn-danger !py-1" @click="deleteUser(data.value)">Delete</button>
+        </div>
+      </template>
+
     </vue3-datatable>
 
   </div>
@@ -124,10 +131,11 @@ const rows = ref([]);
 const cols =
   ref([
     { field: 'id', title: 'ID', isUnique: true, type: 'number' },
-    { field: 'author', title: 'Author', hide: true },
+    { field: 'author', title: 'Author' },
     { field: 'title', title: 'Title' },
     { field: 'status', title: 'Status' },
-    { field: 'content', title: 'Content', sort: false, hide: true },
+    { field: 'content', title: 'Content', sort: false },
+    { field: 'actions', title: 'Actions', sort: false },
   ]) || [];
 
 const filterRows = ref([]);
