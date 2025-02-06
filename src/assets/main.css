@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@plugin '@tailwindcss/forms';
+
+@theme {
+    --font-jost: "Jost", "sans-serif";
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* alt-pagination */
+.alt-pagination .bh-pagination .bh-page-item {
+    @apply  !w-max min-w-[32px] !rounded;
+}
+
+.alt-pagination .bh-pagesize {
+    @apply  !w-20;
+}
+
+/* next-prev-pagination */
+.next-prev-pagination .bh-pagination .bh-page-item {
+    @apply  !w-max min-w-[100px] !rounded;
+}
+
+.next-prev-pagination .bh-pagination>div:first-child {
+    @apply flex-col font-semibold;
+}
+
+.next-prev-pagination .bh-pagination .bh-pagination-number {
+    @apply mx-auto gap-3;
+}
