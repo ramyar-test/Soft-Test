@@ -3,7 +3,7 @@
         <nav class="container mx-auto px-4 sm:px-10 flex flex-nowrap items-center justify-between">
             <RouterLink :to="{ name: 'dashboard' }"
                 class="flex justify-center sm:justify-baseline font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white">
-                SulySoft
+                Soft Test
             </RouterLink>
             <div class="flex flex-row items-center gap-5">
                 <RouterLink :to="{ name: 'dashboard' }" active-class="!text-blue-500 dark:!text-blue-400"
